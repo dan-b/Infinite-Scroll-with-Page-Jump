@@ -1,0 +1,232 @@
+body {
+    background-color: #E2DDCA;
+    background-image: url("texture-1.png");
+    margin: 0 0 200px;
+	background-attachment: fixed;
+}
+
+#menuContainer {
+    background-color: #CF563E;
+    display: block !important;
+    height: 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 4;
+}
+
+#mainMenu {
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+    width: 500px;
+}
+
+#mainMenu .items {
+    display: inline-block;
+    margin: 0 auto;
+    width: 400px;
+}
+
+#mainMenu .items a {
+	font-family: Calibri;
+	font-size: 24px;
+	text-decoration: none;
+	color: #9D3929;
+	margin: 0 5px;
+}
+
+#mainMenu .items a:hover {
+    color: #361B1A;
+}
+
+#mainMenu .items a.selected {
+    color: #361B1A;
+}
+
+#pageMenu {
+    background: none repeat scroll 0 0 transparent;
+    height: auto;
+    left: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 50px 0 80px 80px;
+    position: fixed;
+    right: 563px;
+    top: 25%;
+    width: 80px;
+    z-index: 3;
+}
+
+#pageMenu .jumpTo {
+    background-color: #CF563E;
+    color: #E8E4D5;
+    font: bold 18px Calibri;
+	height: 24px;
+}
+
+#pageMenu .message {
+    background-color: #361B1A;
+    color: #CDB8D2;
+    display: block;
+    font: 14px Calibri;
+    margin: 0 auto;
+    padding-bottom: 2px;
+    text-align: center;
+	visibility: hidden;
+}
+
+#pageMenu input {
+    background-color: #9D3929;
+    border: medium none;
+    color: #E8E4D5;
+    cursor: pointer;
+    float: left;
+    font: bold 18px Calibri;
+    height: 24px;
+    margin: 0;
+    padding: 0 2px 0 0;
+    position: relative;
+    resize: none;
+    text-align: right;
+    width: 30px;
+    z-index: 1;
+}
+
+#pageMenu .pageNav {
+/*	visibility: hidden;*/
+    background-color: #CF563E;
+    float: left;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+#pageMenu .pageNav ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+
+#pageMenu .pageNav li {
+    display: inline;
+}
+
+#pageMenu .pageNav a {
+	text-decoration: none;
+	font: bold 14px Calibri;
+	color: #361B1A;
+}
+
+#content {
+    background-color: rgba(255, 255, 255, 0.2);
+    display: block;
+    margin: 30px auto 0;
+    min-height: 600px;
+    width: 500px;
+}
+
+.pageLabel {
+    float: left;
+    margin: 20px 0 0 -60px;
+    position: relative;
+    z-index: 2;
+}
+
+span.pageLabel {
+	text-decoration: none;
+	font: 16px Calibri;
+	color: #361B1A;
+}
+
+.page {
+    border-bottom: 1px dashed #666666;
+}
+
+.article {
+    border-bottom: 1px solid #D4CFBE;
+    border-top: 1px solid #EEEEEE;
+    color: #361B1A;
+    margin: 0 auto;
+    padding: 40px 50px;
+    width: 400px;
+}
+
+.article:first-child {
+    border-top: none !important;
+}
+
+.article:last-child {
+    border-bottom: none !important;
+}
+
+.article .title, .article .articleID {
+    display: block;
+    font: 18px Verdana;
+    padding: 0 0 10px;
+    text-align: center;
+}
+
+.article .body {
+    font: 12px Verdana;
+	text-align: center;
+    display: block;
+}
+
+.articleNum {
+}
+
+/*
+.jumpTo {
+    overflow: hidden;
+}
+
+.jumpTo .textBox {
+    background-color: #D64C36;
+    border: medium none;
+    color: #9D3929;
+    cursor: pointer;
+    font: bold 18px Calibri;
+    height: 20px;
+    text-decoration: none;
+    width: 22px;
+}
+
+.jumpTo .textBox:hover {
+    color: #361B1A;
+}
+
+.jumpTo .textBox:focus {
+    color: #361B1A;
+}
+
+.jumpTo .submitButton {
+	display: none;
+}
+
+.pages {
+	display: none;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    width: 12px;
+}
+
+.pages a {
+    font: 14px Calibri;
+    text-decoration: none;
+    vertical-align: top;
+}
+
+.pages a.focused {
+    color: #361B1A;
+}
+
+.pages a.nearby {
+	color: #9D3929;
+}
+
+.pages a.focused:hover, .pages a.nearby:hover {
+    color: #361B1A;
+}
+*/
