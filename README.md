@@ -5,7 +5,7 @@ Load more content once reaching the end of a page. Allow the user to jump to a s
 ## Demo
 [View the demo](http://rubbishb.in/code/demos/2oxr89ki/)
 
-This simple demo displays 10 articles per page from a total of 150 articles. If you scroll down it�ll load the next page. If you hover over the small floating box you can enter a page number and click �Enter� to load that specific page.
+This simple demo displays 10 articles per page from a total of 150 articles. If you scroll down it\'ll load the next page. If you hover over the small floating box you can enter a page number and click �Enter� to load that specific page.
 
 ## Motivation
 
