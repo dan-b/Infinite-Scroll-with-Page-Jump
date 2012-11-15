@@ -127,16 +127,19 @@ body {
 }
 
 .pageLabel {
-    float: left;
-    margin: 20px 0 0 -60px;
+    float: right;
+    margin: 0 -100px 0 0;
     position: relative;
     z-index: 2;
 }
 
 span.pageLabel {
-	text-decoration: none;
-	font: 16px Calibri;
-	color: #361B1A;
+    color: #87847A;
+    display: block;
+    font: 10px verdana;
+    text-align: right;
+    text-decoration: underline;
+    width: 100px;
 }
 
 .page {
@@ -148,8 +151,9 @@ span.pageLabel {
     border-top: 1px solid #EEEEEE;
     color: #361B1A;
     margin: 0 auto;
-    padding: 40px 50px;
+    padding: 20px 50px 40px;
     width: 400px;
+	font-family: Verdana;
 }
 
 .article:first-child {
@@ -160,10 +164,24 @@ span.pageLabel {
     border-bottom: none !important;
 }
 
-.article .title, .article .articleID {
+.article .id {
+    color: #87847A;
+    display: inline-block;
+    font-size: 10px;
+}
+
+.article .date {
+    color: #87847A;
+    display: inline;
+    float: right;
+    font-size: 10px;
+}
+
+
+.article .title {
     display: block;
     font: 18px Verdana;
-    padding: 0 0 10px;
+    padding: 15px 0;
     text-align: center;
 }
 
@@ -173,8 +191,7 @@ span.pageLabel {
     display: block;
 }
 
-.articleNum {
-}
+
 
 /*
 .jumpTo {

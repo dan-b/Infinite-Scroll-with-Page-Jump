@@ -35,17 +35,17 @@ function getArticles($page) {
 function displayArticles($page) {
 	$res = getArticles($page);
 	$htmlString = "<div class='page $page'>
-	<span class='pageLabel'>Page $page</span>";
+	<span class='pageLabel'>page $page</span>";
 	$entryNum = ($page-1)*$GLOBALS['articlesPerPage'];
 	while ($row = $res->fetch_array(MYSQLI_ASSOC)) {
 		$entryID = $row["entryID"];
 		++$entryNum;
-		$date = $row["date"];
+		$date = new DateTime($row["date"]);
+		$date = $date->format('j M Y @ g:i a');
 		$title = $row["title"];
 		$body = $row["body"];
 		$htmlString .= "<div class='article'>
-		<div class='id'>$entryID</div>
-		<div class='num'>$entryNum</div>
+		<div class='id'>#$entryID</div>
 		<div class='date'>$date</div>
 		<div class='title'>$title</div>
 		<div class='body'>$body</div>
